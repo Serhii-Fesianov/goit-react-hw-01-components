@@ -1,4 +1,10 @@
-import { Card, CardTittle } from './Profile.styled';
+import {
+  Card,
+  CardTittle,
+  LabelSocial,
+  TextSocial,
+  BasicInformation,
+} from './Profile.styled';
 
 export const WrapperCard = ({ user }) => {
   console.log(user);
@@ -6,11 +12,22 @@ export const WrapperCard = ({ user }) => {
     <Card>
       <img src={user.avatar} alt={user.username} />
       <CardTittle>{user.username}</CardTittle>
-      <p>{user.tag}</p>
-      <p>{user.location}</p>
-      <p>{user.stats.followers}</p>
-      <p>{user.stats.views}</p>
-      <p>{user.stats.likes}</p>
+      <BasicInformation>@{user.tag}</BasicInformation>
+      <BasicInformation>{user.location}</BasicInformation>
+      <LabelSocial>
+        <TextSocial>
+          followers:
+          {user.stats.followers}
+        </TextSocial>
+        <TextSocial>
+          views:
+          {user.stats.views}
+        </TextSocial>
+        <TextSocial>
+          likes:
+          {user.stats.likes}
+        </TextSocial>
+      </LabelSocial>
     </Card>
   );
 };
