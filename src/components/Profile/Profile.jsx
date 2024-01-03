@@ -1,33 +1,35 @@
 import {
   Card,
   CardTittle,
-  LabelSocial,
-  TextSocial,
   BasicInformation,
+  ListSocial,
+  ElementList,
 } from './Profile.styled';
 
 export const WrapperCard = ({ user }) => {
-  console.log(user);
   return (
     <Card>
       <img src={user.avatar} alt={user.username} />
       <CardTittle>{user.username}</CardTittle>
       <BasicInformation>@{user.tag}</BasicInformation>
       <BasicInformation>{user.location}</BasicInformation>
-      <LabelSocial>
-        <TextSocial>
+
+      <ListSocial>
+        <ElementList>
           followers:
           {user.stats.followers}
-        </TextSocial>
-        <TextSocial>
+        </ElementList>
+
+        <ElementList>
           views:
           {user.stats.views}
-        </TextSocial>
-        <TextSocial>
+        </ElementList>
+
+        <ElementList>
           likes:
           {user.stats.likes}
-        </TextSocial>
-      </LabelSocial>
+        </ElementList>
+      </ListSocial>
     </Card>
   );
 };
