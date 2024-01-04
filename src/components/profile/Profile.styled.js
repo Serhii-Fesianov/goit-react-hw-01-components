@@ -7,7 +7,9 @@ export const Card = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: whitesmoke;
-  margin: 30px auto 0 auto;
+  margin: 0 auto;
+  border: 3px solid lightskyblue;
+  border-radius: 5px;
 `;
 
 /////////STYLE IMG\\\\\\\\\
