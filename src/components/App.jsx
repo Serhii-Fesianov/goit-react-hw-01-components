@@ -1,11 +1,11 @@
-import { WrapperCard } from './ProfileUSER/Profile';
-import user from './dataJSON/user.json';
-import data from './dataJSON/data.json';
-import friends from './dataJSON/friends.json';
-import transactions from './dataJSON/transactions.json';
-import { CardStatistics } from './StatisticsList/Statistics';
-import { FriendListUser } from './FriendsLIST/FriendList';
-import { TransactionsUser } from './TransactionTABLE/TransactionHistory';
+import { WrapperCard } from './Profile/Profile';
+import user from './data/user.json';
+import data from './data/data.json';
+import friends from './data/friends.json';
+import transactions from './data/transactions.json';
+import { CardStatistics } from './Statistics/Statistics';
+import { FriendListUser } from './Friends/FriendList';
+import { TransactionsUser } from './Transactions/TransactionHistory';
 
 export const App = () => {
   return (
