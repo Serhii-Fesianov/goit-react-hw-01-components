@@ -24,19 +24,11 @@ export const FriendCard = styled.li`
   margin: 5px 0;
 `;
 
-export const SpanOnline = styled.span`
+export const Span = styled.span`
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: green;
-  margin-right: 10px;
-`;
-
-export const SpanOffline = styled.span`
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: red;
+  background-color: ${({ $isonline }) => ($isonline ? 'green' : 'red')};
   margin-right: 10px;
 `;
 

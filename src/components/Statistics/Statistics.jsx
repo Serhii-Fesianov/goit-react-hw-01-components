@@ -7,10 +7,10 @@ import {
   TitleStatistics,
 } from './Statistics.styled';
 
-export const CardStatistics = ({ data }) => {
+export const CardStatistics = ({ data, title }) => {
   return (
     <SectionStatistics>
-      <TitleStatistics>UPLOAD STATS</TitleStatistics>
+      {title && <TitleStatistics>{title}</TitleStatistics>}
       <ListStatistics>
         {data.map(e => (
           <ElementStatistics key={e.id}>

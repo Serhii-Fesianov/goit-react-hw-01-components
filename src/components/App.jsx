@@ -10,7 +10,8 @@ import { TransactionsUser } from './Transactions/TransactionHistory';
 export const App = () => {
   return (
     <>
-      <WrapperCard user={user} /> <CardStatistics data={data} />
+      <WrapperCard user={user} />{' '}
+      <CardStatistics data={data} title="Upload stats" />
       <FriendListUser friends={friends} />
       <TransactionsUser transactions={transactions} />
     </>
